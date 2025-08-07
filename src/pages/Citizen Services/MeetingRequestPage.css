@@ -1,0 +1,168 @@
+/* Modern Meeting Request Page Styles */
+.meeting-request-modern {
+  background: #f4f6fb;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.dashboard-header {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  padding: 1.5rem 2rem 1rem 2rem;
+  box-shadow: 0 2px 12px rgba(99, 102, 241, 0.08);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-right {
+  flex-shrink: 0;
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.dashboard-content-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 72, 100, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.meeting-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-control-modern {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  background: #fff;
+}
+
+.form-control-modern:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  background: #fff;
+}
+
+.form-control-modern:disabled {
+  background: #f9fafb;
+  color: #6b7280;
+}
+
+.form-control-modern.is-invalid {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-control-modern.is-invalid:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.back-btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.back-btn:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+  color: #1f2937;
+}
+
+.submit-btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease;
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  border: none;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+}
+
+.submit-btn:disabled {
+  background: #9ca3af;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Toast Styles */
+.toast {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .dashboard-content-card {
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    padding: 1rem 0.5rem 0.7rem 0.5rem;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-content-card {
+    padding: 0.5rem 0.2rem;
+  }
+
+  .meeting-form {
+    padding: 0 0.5rem;
+  }
+
+  .form-control-modern {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .back-btn,
+  .submit-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}

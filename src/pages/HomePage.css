@@ -1,0 +1,39 @@
+.home-page {
+  background-image: url('../assets/HomePagebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); 
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.custom-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.enlarged-card {
+  padding: 2rem 1.5rem;
+  min-height: 220px;
+}
+
+.custom-card .btn {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
